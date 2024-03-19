@@ -3,7 +3,7 @@ import streamlit as st
 
 def load_model():
 
-    genai.configure(api_key = st.secrets['gAIzaSyDeSVye3GKNm_JlblddR1GzTG5lczNvD8o'])
+    genai.configure(api_key = st.secrets['google_cloud_api_key'])
 
     return genai.GenerativeModel("gemini-pro")
 
